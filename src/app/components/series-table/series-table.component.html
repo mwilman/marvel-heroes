@@ -2,7 +2,7 @@
   <table mat-table [dataSource]="dataSource" matSort>
     <!-- Titulo Column -->
     <ng-container matColumnDef="title">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Titulo</th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Titel</th>
       <td mat-cell *matCellDef="let row">
         <p>{{ row.title }}</p>
       </td>
@@ -10,7 +10,7 @@
 
     <!-- Periodo Column -->
     <ng-container matColumnDef="years">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Periodo</th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Zeitraum</th>
       <td mat-cell *matCellDef="let row">
         <p>{{ row.startYear }} - {{ row.endYear }}    </p>
       </td>
@@ -18,7 +18,7 @@
 
     <!-- Tipo Column -->
     <ng-container matColumnDef="type">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Tipo</th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Typ</th>
       <td mat-cell *matCellDef="let row">
         <p>{{ (row.type === "") ? "-" : row.type }} </p>
       </td>
@@ -26,9 +26,9 @@
 
     <!-- Detalhes Column -->
     <ng-container matColumnDef="details">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Detalhes</th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Details</th>
       <td mat-cell *matCellDef="let row">
-        <a href={{row.urls[0].url}} target="_blank" rel="noopener noreferrer">Mais Informações</a>
+        <a href={{row.urls[0].url}} target="_blank" rel="noopener noreferrer">Mehr Informationen</a>
       </td>
     </ng-container>
 
